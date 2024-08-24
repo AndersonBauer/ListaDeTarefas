@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="adctarefas">
+            <h1>Adicione uma tarefa</h1>
+            <input id="nome" type="text" placeholder="Nome da tarefa: ">
+            <select id="seletor">
+                <option value="baixo">Baixo</option>
+                <option value="medio">Medio</option>
+                <option value="alto">Alto</option>
+            </select>
+            <button onclick="adicionar()">Adicionar</button>
+        </div>
+        <h2>Legenda de Prioridade</h2>
+        <div class="legenda">
+            <p class="baixo legenda">Baixo</p>
+            <p class="medio legenda">Médio</p>
+            <p class="alto legenda">Alto</p>
+        </div>
+
+        <div class="pendentes">
+            <h2>Tarefas Pendentes</h2>
+            <ul id="relacionados">
+
+            </ul>
+        </div>
+
+        <div class="concluidas">
+            <h2>Tarefas Concluidas</h2>
+            <ul id="concluidas">
+
+            </ul>
+        </div>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
